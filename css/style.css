@@ -18,8 +18,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .flex-container {
@@ -28,12 +28,12 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-line-pack: justify;
-  align-content: space-between;
+      align-content: space-between;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   margin: 0 auto;
 }
 
@@ -51,9 +51,8 @@ h6 {
   padding: 4vh 2vw;
   margin: 3vh 2vw;
   border-radius: 10px;
-
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   width: 25%;
   display: -ms-grid;
   display: grid;
@@ -80,10 +79,11 @@ h6 {
 form {
   list-style: none;
   padding: 0;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  padding: 0 1vw;
   min-height: 250px;
+}
+
+.form-check {
+  padding-left: 2.25rem !important;
 }
 
 .weather-box {
@@ -109,7 +109,7 @@ form {
 .bottom-info {
   text-align: right;
   -ms-flex-item-align: end;
-  align-self: flex-end;
+      align-self: flex-end;
 }
 
 @media only screen and (max-width: 769px) {
@@ -119,23 +119,20 @@ form {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 2vh 5vw;
   }
-
   .item {
     width: 100%;
     -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
-
   form {
     min-height: auto;
     padding-bottom: 4vh;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

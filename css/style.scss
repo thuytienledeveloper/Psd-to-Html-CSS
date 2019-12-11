@@ -70,9 +70,11 @@ h6 {
 form {
     list-style: none;
     padding: 0;
-    align-self: flex-start;
-    padding: 0 1vw;
     min-height: 250px;
+}
+
+.form-check {
+    padding-left: 2.25rem !important;
 }
 
 .weather-box {
