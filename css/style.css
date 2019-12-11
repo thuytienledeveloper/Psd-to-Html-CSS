@@ -1,0 +1,137 @@
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 3vh 0;
+  margin: 0 auto;
+  line-height: 1;
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.temp {
+  font-size: 4rem;
+}
+
+h5,
+h6 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.item {
+  padding: 4vh 2vw;
+  margin: 3vh 2vw;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+          box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  width: 285px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.temp span {
+  font-size: 35px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.col1 {
+  background: #90a6c8;
+}
+
+.col2 {
+  background: #f6d98c;
+}
+
+.col3 {
+  background: #9ebea5;
+}
+
+form {
+  list-style: none;
+  padding: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0 1vw;
+  min-height: 250px;
+}
+
+.weather-box {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  -webkit-box-shadow: 4px 16px 3px -7px rgba(255, 255, 255, 0.72);
+  box-shadow: 4px 16px 3px -7px rgba(255, 255, 255, 0.72);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+.weather-box p {
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
+}
+
+.mid-info {
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.bottom-info {
+  text-align: right;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media only screen and (max-width: 769px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 2vh 5vw;
+  }
+  .item {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  form {
+    min-height: auto;
+    padding-bottom: 4vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
