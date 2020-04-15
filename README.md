@@ -1,6 +1,6 @@
 # CSS 
 
-#Live
+#Live website
 
-https://thuytienledeveloper.github.io/CSS/
+https://github.com/thuytienledeveloper?tab=repositories
  
